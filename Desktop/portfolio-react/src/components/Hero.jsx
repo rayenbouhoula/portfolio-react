@@ -53,13 +53,13 @@ const Hero = () => {
           <a href="https://github.com/rayenbouhoula" target="_blank" rel="noopener noreferrer">
             <FaGithub />
           </a>
-          <a href="https://linkedin.com/in/rayenbouhoula" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.linkedin.com/in/rayen-bouhoula-4841812a9/" target="_blank" rel="noopener noreferrer">
             <FaLinkedin />
           </a>
-          <a href="https://twitter.com/rayenbouhoula" target="_blank" rel="noopener noreferrer">
+          <a href="https://x.com/rayen168038" target="_blank" rel="noopener noreferrer">
             <FaTwitter />
           </a>
-          <a href="mailto:hello@rayenbouhoula.com">
+          <a href="mailto:rayenbouhoula578@gmail.com">
             <FaEnvelope />
           </a>
         </motion.div>
