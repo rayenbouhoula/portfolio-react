@@ -1,12 +1,11 @@
 import { motion } from 'framer-motion'
 import { useInView } from 'framer-motion'
 import { useRef } from 'react'
-import { FaGithub, FaLinkedin, FaTwitter, FaEnvelope, FaPhone } from 'react-icons/fa'
-import { socialLinks, contactInfo } from '../config'
+import { FaGithub, FaLinkedin, FaTwitter, FaEnvelope } from 'react-icons/fa'
 
 const Contact = () => {
   const ref = useRef(null)
-  const isInView = useInView(ref, { once:  true })
+  const isInView = useInView(ref, { once: true })
 
   return (
     <section className="contact" id="contact" ref={ref}>
@@ -18,13 +17,13 @@ const Contact = () => {
           transition={{ duration: 0.6 }}
         >
           Get In Touch
-        </motion. h2>
+        </motion.h2>
         
         <motion.div 
           className="contact-content"
           initial={{ opacity: 0, y: 30 }}
-          animate={isInView ? { opacity: 1, y: 0 } :  {}}
-          transition={{ delay:  0.2, duration: 0.6 }}
+          animate={isInView ? { opacity: 1, y: 0 } : {}}
+          transition={{ delay: 0.2, duration: 0.6 }}
         >
           <p>
             I'm currently looking for new opportunities and my inbox is always open. 
@@ -32,29 +31,26 @@ const Contact = () => {
           </p>
           
           <div className="contact-info">
-            <a href={socialLinks.email}>
-              <FaEnvelope /> {contactInfo.email}
-            </a>
-            <a href={`tel:${contactInfo.phone}`}>
-              <FaPhone /> {contactInfo.phone}
+            <a href="mailto:rayenbouhoula578@gmail.com">
+              <FaEnvelope /> rayenbouhoula578@gmail.com
             </a>
           </div>
           
           <div className="social-links">
-            <a href={socialLinks.github} target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/rayenbouhoula" target="_blank" rel="noopener noreferrer">
               <FaGithub />
             </a>
-            <a href={socialLinks.linkedin} target="_blank" rel="noopener noreferrer">
+            <a href="https://www.linkedin.com/in/rayen-bouhoula-4841812a9/" target="_blank" rel="noopener noreferrer">
               <FaLinkedin />
             </a>
-            <a href={socialLinks.twitter} target="_blank" rel="noopener noreferrer">
+            <a href="https://x.com/rayen168038" target="_blank" rel="noopener noreferrer">
               <FaTwitter />
             </a>
-            <a href={socialLinks.email}>
+            <a href="mailto:rayenbouhoula578@gmail.com">
               <FaEnvelope />
             </a>
           </div>
-        </motion. div>
+        </motion.div>
       </div>
     </section>
   )
