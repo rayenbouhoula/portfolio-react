@@ -7,12 +7,12 @@ export const socialLinks = {
 
 export const contactInfo = {
   email: 'rayenbouhoula578@gmail.com',
-  phone: '+216 445559996',
+  phone: '+216 44555996',
   location: 'Tunisia',
 }
 
 export const personalInfo = {
   name: 'Rayen Bouhoula',
-  title: 'Software Engineering Student | application & Web Developer',
+  title: 'Software Engineering Student | Application & Web Developer',
   description: 'Building beautiful, functional applications with modern technologies',
 }
