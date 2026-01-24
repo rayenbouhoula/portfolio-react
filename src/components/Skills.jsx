@@ -15,6 +15,7 @@ import {
   FaPhp,
   FaDocker,
   FaDatabase,
+  FaCode,
 } from "react-icons/fa"
 
 import {
@@ -27,7 +28,7 @@ import {
   SiMongodb,
   SiPostgresql,
   SiC,
-  SiCsharp as SiDotnet,
+  SiDotnet,
 } from "react-icons/si"
 
 import { TbApi } from "react-icons/tb"
