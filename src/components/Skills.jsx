@@ -23,11 +23,11 @@ import {
   SiTypescript,
   SiFramer,
   SiCplusplus,
-  SiCsharp,
   SiMysql,
   SiMongodb,
   SiPostgresql,
   SiC,
+  SiCsharp as SiDotnet,
 } from "react-icons/si"
 
 import { TbApi } from "react-icons/tb"
@@ -42,7 +42,7 @@ const Skills = () => {
       skills: [
         { name: "C", icon: <SiC /> },
         { name: "C++", icon: <SiCplusplus /> },
-        { name: "C#", icon: <SiCsharp /> },
+        { name: "C#", icon: <SiDotnet /> },
         { name: "Java", icon: <FaJava /> },
         { name: "Python", icon: <FaPython /> },
         { name: "PHP", icon: <FaPhp /> },
