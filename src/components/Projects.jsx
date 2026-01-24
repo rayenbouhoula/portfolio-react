@@ -38,8 +38,8 @@ const Projects = () => {
         { name: 'React', icon: <SiReact /> },
         { name: 'JavaScript', icon: <SiJavascript /> },
       ],
-      github: 'https://github.com/rayenbouhoula/weather-app',
-      demo: 'https://rayenbouhoula.github.io/weather-app',
+      github: 'https://github.com/rayenbouhoula/weather-dashboard',
+      demo: 'https://rayenbouhoula.github.io/weather-dashboard',
       icon:  '🌤️'
     },
     {
@@ -50,7 +50,7 @@ const Projects = () => {
         { name: 'JavaScript', icon:  <SiJavascript /> },
       ],
       github:  'https://github.com/rayenbouhoula/portfolio-react',
-      demo: 'https://rayenbouhoula.github.io/portfolio-react',
+      demo: 'https://rayenbouhoula.github.io/',
       icon: '💼'
     },
   ]

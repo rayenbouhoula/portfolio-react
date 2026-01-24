@@ -10,6 +10,11 @@ import {
   FaGitAlt,
   FaGithub,
   FaFigma,
+  FaPython,
+  FaJava,
+  FaPhp,
+  FaDocker,
+  FaDatabase,
 } from "react-icons/fa"
 
 import {
@@ -17,39 +22,64 @@ import {
   SiFirebase,
   SiTypescript,
   SiFramer,
+  SiCplusplus,
+  SiCsharp,
+  SiMysql,
+  SiMongodb,
+  SiPostgresql,
+  SiC,
 } from "react-icons/si"
+
+import { TbApi } from "react-icons/tb"
 
 const Skills = () => {
   const ref = useRef(null)
-  const isInView = useInView(ref, { once:  true })
+  const isInView = useInView(ref, { once: true })
 
   const skillCategories = [
     {
-      title: "Frontend",
+      title: "Programming Languages",
       skills: [
-        { name: "React", icon:  <FaReact /> },
+        { name: "C", icon: <SiC /> },
+        { name: "C++", icon: <SiCplusplus /> },
+        { name: "C#", icon: <SiCsharp /> },
+        { name: "Java", icon: <FaJava /> },
+        { name: "Python", icon: <FaPython /> },
+        { name: "PHP", icon: <FaPhp /> },
+        { name: "JavaScript", icon: <FaJs /> },
+        { name: "TypeScript", icon: <SiTypescript /> },
+      ],
+    },
+    {
+      title: "Frontend Development",
+      skills: [
+        { name: "React", icon: <FaReact /> },
         { name: "Flutter", icon: <SiFlutter /> },
         { name: "HTML", icon: <FaHtml5 /> },
-        { name:  "CSS", icon: <FaCss3Alt /> },
-        { name: "JavaScript", icon: <FaJs /> },
-        { name: "TypeScript", icon:  <SiTypescript /> },
+        { name: "CSS", icon: <FaCss3Alt /> },
+        { name: "Framer Motion", icon: <SiFramer /> },
       ],
     },
     {
-      title: "Backend & Services",
+      title: "Backend & Databases",
       skills: [
         { name: "Node.js", icon: <FaNodeJs /> },
+        { name: "REST APIs", icon: <TbApi /> },
+        { name: "SQL", icon: <FaDatabase /> },
+        { name: "MySQL", icon: <SiMysql /> },
+        { name: "MongoDB", icon: <SiMongodb /> },
+        { name: "PostgreSQL", icon: <SiPostgresql /> },
         { name: "Firebase", icon: <SiFirebase /> },
-        { name: "REST APIs", icon: <FaNodeJs /> },
+        { name: "NoSQL", icon: <FaDatabase /> },
       ],
     },
     {
-      title: "Tools & Others",
+      title: "Tools & DevOps",
       skills: [
+        { name: "Docker", icon: <FaDocker /> },
         { name: "Git", icon: <FaGitAlt /> },
-        { name:  "GitHub", icon: <FaGithub /> },
+        { name: "GitHub", icon: <FaGithub /> },
         { name: "Figma", icon: <FaFigma /> },
-        { name: "Framer Motion", icon: <SiFramer /> },
       ],
     },
   ]
@@ -75,17 +105,17 @@ const Skills = () => {
         <motion.h2
           className="section-title"
           initial={{ opacity: 0, y: 20 }}
-          animate={isInView ?  { opacity: 1, y:  0 } : {}}
+          animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6 }}
         >
           Skills & Technologies
-        </motion. h2>
+        </motion.h2>
 
-        <motion. div
+        <motion.div
           className="skills-grid"
           variants={containerVariants}
           initial="hidden"
-          animate={isInView ?  "visible" : "hidden"}
+          animate={isInView ? "visible" : "hidden"}
         >
           {skillCategories.map((category, index) => (
             <motion.div
@@ -93,7 +123,7 @@ const Skills = () => {
               className="skill-category"
               variants={itemVariants}
             >
-              <h3>{category. title}</h3>
+              <h3>{category.title}</h3>
 
               <div className="skill-items">
                 {category.skills.map((skill, skillIndex) => (
