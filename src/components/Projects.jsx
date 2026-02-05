@@ -10,17 +10,6 @@ const Projects = () => {
 
   const projects = [
     {
-      title: 'ATS Resume Scanner Pro',
-      description: 'AI-powered resume analyzer that helps optimize resumes for Applicant Tracking Systems. Features skill detection, job matching, visual analytics, and detailed optimization tips.',
-      tech: [
-        { name: 'Python', icon: <SiPython /> },
-        { name: 'Streamlit', icon: <SiStreamlit /> },
-      ],
-      github: 'https://github.com/rayenbouhoula/ATS-Scanner',
-      demo: 'https://github.com/rayenbouhoula/ATS-Scanner',
-      icon: '💼'
-    },
-    {
       title: 'E-Commerce App',
       description: 'A full-featured mobile e-commerce application built with Flutter and Firebase, featuring real-time inventory, secure payments, and user authentication.',
       tech: [
@@ -52,6 +41,17 @@ const Projects = () => {
       github: 'https://github.com/rayenbouhoula/task-manager',
       demo: 'https://rayenbouhoula.github.io/task-manager',
       icon: '✅'
+    },
+    {
+      title: 'ATS Resume Scanner Pro',
+      description: 'AI-powered resume analyzer that helps optimize resumes for Applicant Tracking Systems. Features skill detection, job matching, visual analytics, and detailed optimization tips.',
+      tech: [
+        { name: 'Python', icon: <SiPython /> },
+        { name: 'Streamlit', icon: <SiStreamlit /> },
+      ],
+      github: 'https://github.com/rayenbouhoula/ATS-Scanner',
+      demo: 'https://rayenbouhoula.github.io/ATS-Scanner/', 
+      icon: '💼'
     },
     {
       title: 'Portfolio Website',
